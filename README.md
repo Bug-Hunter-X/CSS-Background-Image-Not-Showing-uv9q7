@@ -1,0 +1,1 @@
+This repository demonstrates a common CSS issue where a background image applied using a pseudo-element doesn't display due to missing dimensions on the container element and the lack of explicit `background-size` setting. The `bug.css` file shows the problematic code, while `bugSolution.css` provides a corrected version.
