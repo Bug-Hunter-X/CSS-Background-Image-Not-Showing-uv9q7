@@ -1,0 +1,23 @@
+To fix this, ensure the container element has defined dimensions (height and width) and explicitly set the `background-size` property.  If the image should cover the entire container, use `background-size: cover;`. If you want to maintain aspect ratio, use `background-size: contain;`. Here's the corrected CSS:
+
+```css
+.container {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
+
+This corrected code ensures that the background image is correctly displayed.
