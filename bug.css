@@ -1,0 +1,1 @@
+The following CSS code snippet uses a pseudo-element (::before) to add a background image to a container.  However, the image doesn't appear because the container has no height or width, and the background-size property is not explicitly set.
